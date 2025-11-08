@@ -1,0 +1,98 @@
+/* ======== Estilo geral ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======== Card de cadastro ======== */
+.cadastro-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 95vh;
+}
+
+.cadastro-container h1 {
+  color: #ff7b00;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.cadastro-container p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* ======== Inputs ======== */
+.cadastro-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.cadastro-container input:focus {
+  border-color: #ff7b00;
+}
+
+/* ======== Botão ======== */
+.cadastro-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7b00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cadastro-container button:hover {
+  background-color: #e66d00;
+}
+
+/* ======== Links ======== */
+.cadastro-container a {
+  display: block;
+  margin-top: 15px;
+  color: #ff7b00;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.cadastro-container a:hover {
+  color: #e66d00;
+  text-decoration: underline;
+}
+
+/* ======== Responsividade ======== */
+@media (max-width: 480px) {
+  .cadastro-container {
+    padding: 30px 20px;
+  }
+}

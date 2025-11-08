@@ -1,0 +1,144 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #fff; /* ou sua cor desejada */
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #ff7b00;
+  padding: 15px 0;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.header nav a:hover {
+  opacity: 0.8;
+}
+
+.btn-login {
+  background-color: rgba(255, 255, 255, 0.432);
+  color: #ff7b00;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #ffe0cc;
+}
+
+/* ======== BANNER ======== */
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/B2B-PAKTO/Frontend/Publicas/img/Banner.png")center/cover no-repeat ;
+  background-size: cover;
+  background-position: center top 55%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-cadastro {
+  background-color: #ff7b00;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-cadastro:hover {
+  background-color: #e66d00;
+}
+
+/* ======== CATEGORIAS ======== */
+.categorias {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.categorias h3 {
+  color: #ff7b00;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.categoria-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  font-weight: 500;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ======== FOOTER ======== */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
