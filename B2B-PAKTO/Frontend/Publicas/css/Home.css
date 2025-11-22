@@ -65,7 +65,7 @@ html, body {
 .banner {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/B2B-PAKTO/Frontend/Publicas/img/Banner.png")center/cover no-repeat ;
   background-size: cover;
-  background-position: center top 55%;
+  background-position: center top 62%;
   height: 70vh;
   display: flex;
   align-items: center;
