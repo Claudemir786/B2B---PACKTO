@@ -1,50 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="clientes.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - B2B PACKTO</title>
+
+    <link rel="stylesheet" href="./css/dashboard.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- HEADER -->
     <header class="header">
         <h1>B2B PACKTO</h1>
-        <nav>
+
+        <nav class="menu">
             <a href="Dashboard.html">Dashboard</a>
             <a href="CatalogoCompleto.html">Catálogo Completo</a>
             <a href="Carrinho.html">Carrinho</a>
-            <a href="Pedidos.html">Pedidos</a>
+            <a href="Pedidos.html" class="active">Pedidos</a>
             <a href="Perfil.html">Perfil</a>
         </nav>
     </header>
+    
+    <!-- CONTEÚDO -->
+    <main class="container">
 
-    <!-- Conteúdo -->
-    <section class="container">
-        <h2>Dashboard</h2>
+        <h2 class="page-title">Dashboard</h2>
 
-        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
-            <div style="background:#ff7b00; color:white; padding:20px; border-radius:8px; flex:1; min-width:150px; text-align:center;">
+        <!-- CARDS -->
+        <section class="cards-area">
+            <div class="dash-card">
                 <h3>Total de Pedidos</h3>
                 <p>25</p>
             </div>
-            <div style="background:#ff7b00; color:white; padding:20px; border-radius:8px; flex:1; min-width:150px; text-align:center;">
+
+            <div class="dash-card">
                 <h3>Pedidos em Andamento</h3>
                 <p>5</p>
             </div>
-            <div style="background:#ff7b00; color:white; padding:20px; border-radius:8px; flex:1; min-width:150px; text-align:center;">
+
+            <div class="dash-card">
                 <h3>Novos Produtos</h3>
                 <p>12</p>
             </div>
-        </div>
+        </section>
 
-    </section>
+        <!-- GRÁFICOS -->
+        <section class="charts-area">
 
-    <!-- Rodapé -->
+            <div class="chart-box">
+                <h3>Pedidos por Mês</h3>
+                <canvas id="chartPedidosMes"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h3>Produtos Mais Vendidos</h3>
+                <canvas id="chartProdutos"></canvas>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer class="footer">
         &copy; 2025 B2B PACKTO — Todos os direitos reservados.
     </footer>
+
+
+
+    <!-- SCRIPTS DOS GRÁFICOS -->
+    <script>
+        // GRÁFICO 1 — Pedidos por mês
+        new Chart(document.getElementById("chartPedidosMes"), {
+            type: "line",
+            data: {
+                labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
+                datasets: [{
+                    label: "Pedidos",
+                    data: [4, 7, 6, 10, 12, 13],
+                    borderColor: "#ff7b00",
+                    borderWidth: 3,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // GRÁFICO 2 — Produtos mais vendidos
+        new Chart(document.getElementById("chartProdutos"), {
+            type: "bar",
+            data: {
+                labels: ["Caixas", "Sacolas", "Potes", "Bandejas", "Copos"],
+                datasets: [{
+                    label: "Vendas",
+                    data: [50, 32, 41, 20, 29],
+                    backgroundColor: "#ff7b00"
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    </script>
 
 </body>
 </html>

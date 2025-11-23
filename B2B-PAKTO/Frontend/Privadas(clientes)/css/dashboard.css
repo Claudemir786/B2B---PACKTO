@@ -1,0 +1,124 @@
+/* ============================
+   RESET / BASE
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* ========== HEADER ========== */
+.header {
+    background: #ff7b00;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.menu {
+    margin-top: 12px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+/* ============================
+   CONTAINER
+============================ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.page-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* ============================
+   DASHBOARD CARDS
+============================ */
+.cards-area {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dash-card {
+    background: #ff7b00;
+    color: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dash-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dash-card p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* ============================
+   GRÁFICOS
+============================ */
+.charts-area {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+.chart-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.chart-box h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* ============================
+   FOOTER
+============================ */
+.footer {
+    margin-top: 60px;
+    background: #ff7b00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}

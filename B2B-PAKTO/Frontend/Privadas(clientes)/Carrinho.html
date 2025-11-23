@@ -4,53 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
-    <link rel="stylesheet" href="clientes.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- HEADER -->
     <header class="header">
         <h1>B2B PACKTO</h1>
-        <nav>
+
+        <nav class="menu">
             <a href="Dashboard.html">Dashboard</a>
             <a href="CatalogoCompleto.html">Catálogo Completo</a>
-            <a href="Carrinho.html">Carrinho</a>
+            <a href="Carrinho.html" class="active">Carrinho</a>
             <a href="Pedidos.html">Pedidos</a>
             <a href="Perfil.html">Perfil</a>
         </nav>
     </header>
 
-    <!-- Conteúdo -->
+    <!-- CONTEÚDO -->
     <section class="container">
         <h2>Carrinho</h2>
 
-        <table>
-            <tr>
-                <th>Produto</th>
-                <th>Quantidade</th>
-                <th>Preço Unitário</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <td>Caixa de Papelão</td>
-                <td>3</td>
-                <td>R$ 12,00</td>
-                <td>R$ 36,00</td>
-            </tr>
-            <tr>
-                <td>Embalagem Plástica</td>
-                <td>5</td>
-                <td>R$ 8,50</td>
-                <td>R$ 42,50</td>
-            </tr>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
 
-        <button style="margin-top:20px;">Finalizar Compra</button>
+                <tbody>
+                    <tr>
+                        <td>Caixa de Papelão</td>
+                        <td>3</td>
+                        <td>R$ 12,00</td>
+                        <td>R$ 36,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Embalagem Plástica</td>
+                        <td>5</td>
+                        <td>R$ 8,50</td>
+                        <td>R$ 42,50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button class="btn-finalizar">Finalizar Compra</button>
     </section>
 
-    <!-- Rodapé -->
+    <!-- FOOTER -->
     <footer class="footer">
-        &copy; 2025 B2B PACKTO — Todos os direitos reservados.
+        © 2025 B2B PACKTO — Todos os direitos reservados.
     </footer>
 
 </body>

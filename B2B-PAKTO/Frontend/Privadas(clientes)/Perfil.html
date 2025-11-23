@@ -4,33 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="stylesheet" href="clientes.css">
+    <link rel="stylesheet" href="./css/perfil.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    
+    <!-- HEADER -->
     <header class="header">
         <h1>B2B PACKTO</h1>
-        <nav>
+
+        <nav class="menu">
             <a href="Dashboard.html">Dashboard</a>
             <a href="CatalogoCompleto.html">Catálogo Completo</a>
             <a href="Carrinho.html">Carrinho</a>
-            <a href="Pedidos.html">Pedidos</a>
+            <a href="Pedidos.html" class="active">Pedidos</a>
             <a href="Perfil.html">Perfil</a>
         </nav>
     </header>
 
-    <!-- Conteúdo -->
-    <section class="container" style="text-align:center;">
-        <img src="https://via.placeholder.com/120" alt="Foto do usuário" style="border-radius:50%; margin-bottom:15px;">
-        <h2>Nome do Usuário</h2>
-        <p>email@empresa.com</p>
-        <button>Editar Perfil</button>
+    <!-- CONTEÚDO DO PERFIL -->
+    <section class="perfil-container">
+        <div class="perfil-box">
+            <img src="./img/itadoru.webp" alt="Foto do usuário" class="perfil-foto">
+
+            <h2 class="perfil-nome">Nome do Usuário</h2>
+            <p class="perfil-email">email@empresa.com</p>
+
+            <button class="btn-editar">Editar Perfil</button>
+        </div>
     </section>
 
-    <!-- Rodapé -->
+    <!-- FOOTER -->
     <footer class="footer">
-        &copy; 2025 B2B PACKTO — Todos os direitos reservados.
+        © 2025 B2B PACKTO — Todos os direitos reservados.
     </footer>
 
 </body>
