@@ -123,4 +123,10 @@ header .logoo {
    color: white;
 }
 
+.card img.product-img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
 
