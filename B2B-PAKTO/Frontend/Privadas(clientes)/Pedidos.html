@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos</title>
-    <link rel="stylesheet" href="clientes.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedidos</title>
+  <link rel="stylesheet" href="../Publicas/css/Catalogo.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="header">
-        <h1>B2B PACKTO</h1>
-        <nav>
-            <a href="Dashboard.html">Dashboard</a>
-            <a href="CatalogoCompleto.html">Catálogo Completo</a>
-            <a href="Carrinho.html">Carrinho</a>
-            <a href="Pedidos.html">Pedidos</a>
-            <a href="Perfil.html">Perfil</a>
-        </nav>
-    </header>
+  <!-- Header padronizado -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><a class="logoo" href="Dashboard.html">B2B PACKTO</a></h1>
+      <nav>
+        <a class="categoria-card" href="Dashboard.html">Dashboard</a>
+        <a class="categoria-card" href="CatalogoCompleto.html">Catálogo</a>
+        <a class="categoria-card" href="Carrinho.html">Carrinho</a>
+        <a class="categoria-card active" href="Pedidos.html">Pedidos</a>
+        <a class="categoria-card" href="Perfil.html">Perfil</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Conteúdo -->
-    <section class="container">
-        <h2>Meus Pedidos</h2>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Data</th>
-                <th>Status</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <td>#001</td>
-                <td>10/11/2025</td>
-                <td>Entregue</td>
-                <td>R$ 150,00</td>
-            </tr>
-            <tr>
-                <td>#002</td>
-                <td>15/11/2025</td>
-                <td>Em andamento</td>
-                <td>R$ 89,90</td>
-            </tr>
-        </table>
-    </section>
+  <!-- Conteúdo -->
+  <section class="container">
+    <div class="banner">Meus Pedidos</div>
+    <h2>Histórico de Pedidos</h2>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        &copy; 2025 B2B PACKTO — Todos os direitos reservados.
-    </footer>
+    <div class="produtos">
+      <table style="width:100%; border-collapse:collapse; margin-top:10px;">
+        <thead>
+          <tr style="background:#ff7b00; color:#fff;">
+            <th style="padding:10px; text-align:left;">ID</th>
+            <th style="padding:10px; text-align:left;">Data</th>
+            <th style="padding:10px; text-align:center;">Lotes (total)</th>
+            <th style="padding:10px; text-align:right;">Total</th>
+            <th style="padding:10px; text-align:center;">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- Exemplo 1: corresponde ao carrinho de exemplo acima (3 lotes totalizando R$509,00) -->
+          <tr>
+            <td style="padding:10px;">#001</td>
+            <td style="padding:10px;">10/11/2025</td>
+            <td style="padding:10px; text-align:center;">3</td>
+            <td style="padding:10px; text-align:right;">R$ 509,00</td>
+            <td style="padding:10px; text-align:center;">Entregue</td>
+          </tr>
+
+          <!-- Exemplo 2 -->
+          <tr>
+            <td style="padding:10px;">#002</td>
+            <td style="padding:10px;">15/11/2025</td>
+            <td style="padding:10px; text-align:center;">1</td>
+            <td style="padding:10px; text-align:right;">R$ 425,00</td>
+            <td style="padding:10px; text-align:center;">Em andamento</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer padronizado -->
+  <footer>
+    <p>PACKTO Embalagens © 2025 - Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>

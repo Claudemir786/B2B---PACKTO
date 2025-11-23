@@ -1,57 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
-    <link rel="stylesheet" href="clientes.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="../Publicas/css/Catalogo.css">
+
+  <style>
+    table th, table td {
+      white-space: nowrap;
+    }
+
+    table th {
+      font-weight: bold;
+    }
+
+    .col-produto { width: 40%; }
+    .col-lote { width: 15%; text-align:center; }
+    .col-qtd { width: 15%; text-align:center; }
+    .col-preco { width: 15%; text-align:right; }
+    .col-total { width: 15%; text-align:right; }
+
+    .tfoot-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .tfoot-actions .btn {
+      padding: 8px 15px;
+      background-color: #ff7b00;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .tfoot-actions .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="header">
-        <h1>B2B PACKTO</h1>
-        <nav>
-            <a href="Dashboard.html">Dashboard</a>
-            <a href="CatalogoCompleto.html">Catálogo Completo</a>
-            <a href="Carrinho.html">Carrinho</a>
-            <a href="Pedidos.html">Pedidos</a>
-            <a href="Perfil.html">Perfil</a>
-        </nav>
-    </header>
+  <!-- Header padronizado -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><a class="logoo" href="Dashboard.html">B2B PACKTO</a></h1>
+      <nav>
+        <a class="categoria-card" href="Dashboard.html">Dashboard</a>
+        <a class="categoria-card" href="CatalogoCompleto.html">Catálogo</a>
+        <a class="categoria-card active" href="Carrinho.html">Carrinho</a>
+        <a class="categoria-card" href="Pedidos.html">Pedidos</a>
+        <a class="categoria-card" href="Perfil.html">Perfil</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Conteúdo -->
-    <section class="container">
-        <h2>Carrinho</h2>
+  <!-- Conteúdo -->
+  <section class="container">
+    <div class="banner">Meu Carrinho</div>
+    <h2>Itens no Carrinho (venda por lote)</h2>
 
-        <table>
-            <tr>
-                <th>Produto</th>
-                <th>Quantidade</th>
-                <th>Preço Unitário</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <td>Caixa de Papelão</td>
-                <td>3</td>
-                <td>R$ 12,00</td>
-                <td>R$ 36,00</td>
-            </tr>
-            <tr>
-                <td>Embalagem Plástica</td>
-                <td>5</td>
-                <td>R$ 8,50</td>
-                <td>R$ 42,50</td>
-            </tr>
-        </table>
+    <div class="produtos">
+      <table style="width:100%; border-collapse:collapse; margin-top:10px;">
 
-        <button style="margin-top:20px;">Finalizar Compra</button>
-    </section>
+        <thead>
+          <tr style="background:#ff7b00; color:#fff;">
+            <th class="col-produto" style="padding:10px;">Produto</th>
+            <th class="col-lote" style="padding:10px;">Lote</th>
+            <th class="col-qtd" style="padding:10px;">Qtd. de Lotes</th>
+            <th class="col-preco" style="padding:10px;">Preço por Lote</th>
+            <th class="col-total" style="padding:10px;">Total</th>
+          </tr>
+        </thead>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        &copy; 2025 B2B PACKTO — Todos os direitos reservados.
-    </footer>
+        <tbody>
+          <tr>
+            <td class="col-produto" style="padding:10px;">Saco Kraft</td>
+            <td class="col-lote" style="padding:10px;">50 un.</td>
+            <td class="col-qtd" style="padding:10px;">1</td>
+            <td class="col-preco" style="padding:10px;">R$ 129,00</td>
+            <td class="col-total" style="padding:10px;">R$ 129,00</td>
+          </tr>
+
+          <tr>
+            <td class="col-produto" style="padding:10px;">Pote Plástico</td>
+            <td class="col-lote" style="padding:10px;">50 un.</td>
+            <td class="col-qtd" style="padding:10px;">2</td>
+            <td class="col-preco" style="padding:10px;">R$ 85,00</td>
+            <td class="col-total" style="padding:10px;">R$ 170,00</td>
+          </tr>
+
+          <tr>
+            <td class="col-produto" style="padding:10px;">Caixa Delivery</td>
+            <td class="col-lote" style="padding:10px;">50 un.</td>
+            <td class="col-qtd" style="padding:10px;">1</td>
+            <td class="col-preco" style="padding:10px;">R$ 210,00</td>
+            <td class="col-total" style="padding:10px;">R$ 210,00</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr style="background:#f2f2f2;">
+            <td colspan="5" style="padding:12px;">
+              <div class="tfoot-actions">
+                <span style="font-weight:bold;">Total Geral: R$ 509,00</span>
+                <div>
+                  <button class="btn">Continuar Comprando</button>
+                  <button class="btn">Finalizar Pedido</button>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer padronizado -->
+  <footer>
+    <p>PACKTO Embalagens © 2025 - Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>

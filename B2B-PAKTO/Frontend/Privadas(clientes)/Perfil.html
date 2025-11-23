@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="clientes.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="../Publicas/css/Catalogo.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="header">
-        <h1>B2B PACKTO</h1>
-        <nav>
-            <a href="Dashboard.html">Dashboard</a>
-            <a href="CatalogoCompleto.html">Catálogo Completo</a>
-            <a href="Carrinho.html">Carrinho</a>
-            <a href="Pedidos.html">Pedidos</a>
-            <a href="Perfil.html">Perfil</a>
-        </nav>
-    </header>
+<header class="header">
+  <div class="container">
+    <h1 class="logo"><a class="logoo" href="Dashboard.html">B2B PACKTO</a></h1>
+    <nav>
+      <a class="categoria-card" href="Dashboard.html">Dashboard</a>
+      <a class="categoria-card" href="CatalogoCompleto.html">Catálogo</a>
+      <a class="categoria-card" href="Carrinho.html">Carrinho</a>
+      <a class="categoria-card" href="Pedidos.html">Pedidos</a>
+      <a class="categoria-card" href="Perfil.html">Perfil</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Conteúdo -->
-    <section class="container" style="text-align:center;">
-        <img src="https://via.placeholder.com/120" alt="Foto do usuário" style="border-radius:50%; margin-bottom:15px;">
-        <h2>Nome do Usuário</h2>
-        <p>email@empresa.com</p>
-        <button>Editar Perfil</button>
-    </section>
+<section class="container">
+  <div class="banner">Informações do Usuário</div>
+  <h2>Nome do Usuário</h2>
+  <p>email@empresa.com</p>
+  <div class="produtos" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+    <div class="card">
+      <h3>Alterar Senha</h3>
+      <button>Atualizar</button>
+    </div>
+    <div class="card">
+      <h3>Editar Perfil</h3>
+      <button>Editar</button>
+    </div>
+    <div class="card">
+      <h3>Configurações</h3>
+      <button>Configurar</button>
+    </div>
+  </div>
+</section>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        &copy; 2025 B2B PACKTO — Todos os direitos reservados.
-    </footer>
+<footer>
+  <p>PACKTO Embalagens © 2025 - Todos os direitos reservados</p>
+</footer>
 
 </body>
 </html>

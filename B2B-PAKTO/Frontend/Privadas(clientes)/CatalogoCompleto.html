@@ -1,58 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Completo</title>
-    <link rel="stylesheet" href="clientes.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo Completo</title>
+  <link rel="stylesheet" href="../Publicas/css/Catalogo.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="header">
-        <h1>B2B PACKTO</h1>
-        <nav>
-            <a href="Dashboard.html">Dashboard</a>
-            <a href="CatalogoCompleto.html">Catálogo Completo</a>
-            <a href="Carrinho.html">Carrinho</a>
-            <a href="Pedidos.html">Pedidos</a>
-            <a href="Perfil.html">Perfil</a>
-        </nav>
-    </header>
+  <!-- Header padronizado -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><a class="logoo" href="Dashboard.html">B2B PACKTO</a></h1>
+      <nav>
+        <a class="categoria-card" href="Dashboard.html">Dashboard</a>
+        <a class="categoria-card active" href="CatalogoCompleto.html">Catálogo</a>
+        <a class="categoria-card" href="Carrinho.html">Carrinho</a>
+        <a class="categoria-card" href="Pedidos.html">Pedidos</a>
+        <a class="categoria-card" href="Perfil.html">Perfil</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Conteúdo -->
-    <section class="container">
-        <h2>Catálogo Completo</h2>
+  <!-- Conteúdo -->
+  <section class="container">
+    <div class="banner">Qualidade e Praticidade em Embalagens</div>
+    <h2>Nossos Produtos</h2>
 
-        <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px;">
-            <div style="background:#fff; padding:15px; border-radius:8px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:200px; text-align:center;">
-                <h3>Caixa de Papelão</h3>
-                <p>R$ 12,00</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div style="background:#fff; padding:15px; border-radius:8px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:200px; text-align:center;">
-                <h3>Embalagem Plástica</h3>
-                <p>R$ 8,50</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div style="background:#fff; padding:15px; border-radius:8px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:200px; text-align:center;">
-                <h3>Sacos e Sacolas</h3>
-                <p>R$ 5,00</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div style="background:#fff; padding:15px; border-radius:8px; box-shadow:0 3px 10px rgba(0,0,0,0.1); width:200px; text-align:center;">
-                <h3>Rótulos e Etiquetas</h3>
-                <p>R$ 2,50</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-        </div>
+    <div class="produtos">
+      <div class="card">
+        <h3>Saco Kraft</h3>
+        <p>Resistente e ideal para alimentos e produtos leves.</p>
+        <strong>R$ 129,00 (lote com 50)</strong>
+      </div>
 
-    </section>
+      <div class="card">
+        <h3>Pote Plástico</h3>
+        <p>Transparente e seguro para armazenar alimentos.</p>
+        <strong>R$ 85,00 (lote com 50)</strong>
+      </div>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        &copy; 2025 B2B PACKTO — Todos os direitos reservados.
-    </footer>
+      <div class="card">
+        <h3>Caixa Delivery</h3>
+        <p>Estrutura reforçada ideal para entregas.</p>
+        <strong>R$ 210,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Embalagem Danone</h3>
+        <p>Alta qualidade e 100% reciclável.</p>
+        <strong>R$ 150,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Embalagem PET</h3>
+        <p>Alta qualidade e 100% reciclável.</p>
+        <strong>R$ 425,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Caixa Pardo Pequena</h3>
+        <p>Compacta, resistente e ideal para pequenos envios.</p>
+        <strong>R$ 425,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Caixa Pardo Média</h3>
+        <p>Versátil e perfeita para produtos de tamanho médio.</p>
+        <strong>R$ 595,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Caixa Pardo Grande</h3>
+        <p>Ampla e reforçada, ideal para armazenar e transportar itens maiores.</p>
+        <strong>R$ 870,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Pote Transparente 500ml</h3>
+        <p>Ótimo para alimentos, mantém a vedação e preserva a qualidade.</p>
+        <strong>R$ 210,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Pote Transparente 1000ml</h3>
+        <p>Capacidade ideal para alimentos maiores, prático e resistente.</p>
+        <strong>R$ 345,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Saco Plástico PP</h3>
+        <p>Material leve, transparente e ideal para organização.</p>
+        <strong>R$ 175,00 (lote com 100)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Saco Ziplock</h3>
+        <p>Reutilizável e prático, ideal para armazenar pequenos itens e alimentos.</p>
+        <strong>R$ 295,00 (lote com 100)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Bobina Stretch</h3>
+        <p>Perfeita para envolver e proteger volumes maiores no transporte.</p>
+        <strong>R$ 114,00 (lote com 5)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Envelope jonTex</h3>
+        <p>Resistente e ideal para grandes ou pequenos produtos.</p>
+        <strong>R$ 145,00 (lote com 50)</strong>
+      </div>
+
+      <div class="card">
+        <h3>Envelope Almofadado</h3>
+        <p>Revestimento interno que protege objetos frágeis.</p>
+        <strong>R$ 240,00 (lote com 50)</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer padronizado -->
+  <footer>
+    <p>PACKTO Embalagens © 2025 - Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>
