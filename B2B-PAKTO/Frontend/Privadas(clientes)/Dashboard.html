@@ -44,5 +44,46 @@
   <p>PACKTO Embalagens © 2025 - Todos os direitos reservados</p>
 </footer>
 
+
+
+    <!-- SCRIPTS DOS GRÁFICOS -->
+    <script>
+        // GRÁFICO 1 — Pedidos por mês
+        new Chart(document.getElementById("chartPedidosMes"), {
+            type: "line",
+            data: {
+                labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
+                datasets: [{
+                    label: "Pedidos",
+                    data: [4, 7, 6, 10, 12, 13],
+                    borderColor: "#ff7b00",
+                    borderWidth: 3,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // GRÁFICO 2 — Produtos mais vendidos
+        new Chart(document.getElementById("chartProdutos"), {
+            type: "bar",
+            data: {
+                labels: ["Caixas", "Sacolas", "Potes", "Bandejas", "Copos"],
+                datasets: [{
+                    label: "Vendas",
+                    data: [50, 32, 41, 20, 29],
+                    backgroundColor: "#ff7b00"
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    </script>
+
 </body>
 </html>
